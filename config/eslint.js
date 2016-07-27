@@ -117,7 +117,7 @@ module.exports = {
     'no-sparse-arrays': WARNING,
     'no-this-before-super': WARNING,
     'no-throw-literal': WARNING,
-    'no-undef': WARNING,
+    // 'no-undef': WARNING,
     'no-unexpected-multiline': WARNING,
     'no-unreachable': WARNING,
     'no-unused-expressions': WARNING,
