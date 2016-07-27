@@ -4,9 +4,9 @@ import { routerReducer } from 'react-router-redux';
 /**
  * @author "Tom Freeborough"  <thomas@hotsnapper.com> (27 Jul 2016)
  *
- * Import reducers below
+ * Import your reducers below
  */
-import example_reducer from './_examples/example_reducer';
+import { test } from './_examples/example_reducer';
 
 /**
  * Add to the reducersList any reducers which are needed for the redux application, try to keep reducers separated
@@ -15,11 +15,10 @@ import example_reducer from './_examples/example_reducer';
  *
  */
 const reducerList = {
-  example_reducer
+  test
 };
 
 reducerList.routing =  routerReducer;
 const reducers = combineReducers(reducerList);
-
 
 export default reducers;
