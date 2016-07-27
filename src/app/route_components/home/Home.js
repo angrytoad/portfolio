@@ -3,6 +3,8 @@ import './Home.css';
 
 import logo from './logo.png';
 
+import ExampleContainer from '../../../_examples/example_container';
+
 const Home = (props) => {
   return (
     <div id="home">
@@ -12,6 +14,7 @@ const Home = (props) => {
         <img src={logo} id="logo" />
       </div>
 
+      <ExampleContainer />
     </div>
   )
 };
