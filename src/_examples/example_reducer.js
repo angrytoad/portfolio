@@ -7,15 +7,12 @@
  *
  * NOTE: NEVER MUTATE THE STATE - Read more here: http://redux.js.org/docs/introduction/ThreePrinciples.html
  */
-const test = (state, action) => {
-  switch ( action.type ) {
-    case 'TEST':
-      console.info('TEST REDUCER WORKING');
-      return state;
-    default:
-      return state || 'TEST';
+
+export const test = (state, action) => {
+    switch ( action.type ) {
+      case 'TEST':
+        return 'TEST ACTION WORKING';
+      default:
+        return state || 'NO ACTION RECEIVED';
+    }
   }
-};
-
-
-export default test;
