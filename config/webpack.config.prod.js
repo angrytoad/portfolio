@@ -24,7 +24,7 @@ module.exports = {
   entry: path.join(srcPath, 'index'),
   output: {
     path: buildPath,
-    filename: '[name].[chunkhash].js',
+    filename: '[name].js',
     chunkFilename: '[name].[chunkhash].chunk.js',
     // TODO: this wouldn't work for e.g. GH Pages.
     // Good news: we can infer it from package.json :-)
@@ -66,7 +66,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
-        loader: 'file',
+        loader: 'file?name=assets/[name].[ext]',
       },
       {
         test: /\.(mp4|webm)$/,
@@ -87,6 +87,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: indexHtmlPath,
+      filename: 'index.prod.html',
       favicon: faviconPath,
       minify: {
         removeComments: true,
@@ -117,6 +118,6 @@ module.exports = {
         screw_ie8: true
       }
     }),
-    new ExtractTextPlugin('[name].[contenthash].css')
+    new ExtractTextPlugin('[name].css')
   ]
 };
