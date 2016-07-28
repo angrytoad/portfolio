@@ -67,7 +67,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
-        loader: 'file',
+        loader: 'file?name=assets/[name].[ext]',
       },
       {
         test: /\.(mp4|webm)$/,
