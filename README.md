@@ -15,7 +15,13 @@ You will also see any lint errors in the console.
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The build is minified. <br>
+
+### Serving on production
+
+To correctly server the application on production, an express server has been included to allow
+for server side rendering. After bundling with `npm run build` you should run 
+`node ./scripts/_prod/server.prod.js` from the root directory. If you need automatic restarts
+and stuff like that then you can `npm install forever -g` and then do `forever start scripts/_prod/server.prod.js`.
 
 
