@@ -7,7 +7,10 @@ import { Provider } from 'react-redux';
 /**
  * @author "Tom Freeborough"  <thomas@hotsnapper.com> (27 Jul 2016)
  *
- * We need to configure the store
+ * We need to configure the store based on what environment we are currently in, two
+ * configurations have been provided to manager the store depending on the
+ * environment, one of the big differences is the inclusion of
+ * redux dev tools for the development environment.
  */
 import configureStore from './_dev/store/configureStore';
 
@@ -21,6 +24,7 @@ import routes from "./routes";
  * we want to create asynchronous actions.
  */
 const store = configureStore();
+
 /**
  * Pass a history to the router along with the redux store to enable seamless traversal across
  * pages with redux.
