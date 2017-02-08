@@ -4,6 +4,7 @@ import DevTools from '../../_dev/DevTools';
 const environment = process.env.NODE_ENV;
 
 import './core.scss';
+import './imports.scss';
 
 /**
  * @author "Tom Freeborough"  <thomas@hotsnapper.com> (27 Jul 2016)
