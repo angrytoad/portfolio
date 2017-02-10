@@ -9,13 +9,20 @@ import { routerReducer } from 'react-router-redux';
 import { test } from './_examples/example_reducer';
 
 /**
+ * GitHubReducers
+ */
+import { GitHubUser } from './app/route_components/home/Main/HomeHeader/reducers'; 
+
+/**
  * Add to the reducersList any reducers which are needed for the redux application, try to keep reducers separated
  * into their own files and not create one great big reducers file. One option is to create reducers
  * in accordance with their primary function. I.E having a reducer file to handle login ETC.
  *
  */
 const reducerList = {
-  test
+  test,
+  
+  GitHubUser,
 };
 
 reducerList.routing =  routerReducer;

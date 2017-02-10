@@ -1,0 +1,35 @@
+@import "../../../application_wrapper/core";
+
+#Menu{
+
+  #MenuTitle{
+    height:200px;
+    padding:2rem;
+    border-bottom:4px solid white;
+    box-sizing: border-box;
+
+    h2{
+      text-align: center;
+      width:100%;
+    }
+  }
+
+  ul{
+
+    padding: 1rem 1rem;
+    list-style-type: none;
+    text-align: center;
+
+    li{
+      font-size:1.6rem;
+      margin-bottom:2rem;
+      margin-top:2rem;
+      letter-spacing: 4px;
+
+      &:hover{
+        color:$main_bg_color;
+        cursor:pointer;
+      }
+    }
+  }
+}

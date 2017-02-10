@@ -1,0 +1,86 @@
+@import "../../../../application_wrapper/core";
+
+
+#HomeBody{
+
+  #HomeBodyGitHubBio{
+    padding-top:100px;
+    padding-bottom:100px;
+    color:white;
+    text-align: center;
+    font-size:2rem;
+
+    .title{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color:$main_highlight;
+    }
+
+    .gitbox{
+      background:$menu_bg_color;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      position: relative;
+      box-shadow:0px 0px 5px $menu_bg_color;
+
+      .absolute-center{
+        position: absolute;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+        display: table;
+        width:100%;
+        height:100%;
+
+       >div{
+         display: table-cell;
+         vertical-align: middle;
+
+         p{
+           font-size:1.3rem;
+           text-transform: uppercase;
+           letter-spacing: 2px;
+           margin:0px;
+         }
+
+         .big{
+           font-size:2rem;
+           font-weight: bold;
+           color:$main_highlight;
+         }
+        }
+      }
+    }
+  }
+
+  #HomeBodyStrapLine{
+    padding-top:100px;
+    padding-bottom:100px;
+
+    h4{
+      color:white;
+      text-align: center;
+      font-size:3rem;
+    }
+  }
+}
+
+@media screen and (max-width:1200px){
+
+  #HomeBodyGitHubBio{
+    .row{
+      display:block;
+
+
+      .gitbox-wrapper{
+        width:48%;
+        max-width:250px;
+        padding:1%;
+        display:inline-block;
+      }
+    }
+  }
+
+}

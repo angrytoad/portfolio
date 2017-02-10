@@ -1,0 +1,71 @@
+@import "../../../../application_wrapper/core";
+
+
+#HomeHeader{
+  min-height:200px;
+  display:inline-block;
+  width:100%;
+  background:white;
+
+  #HeaderInformation{
+    display:table;
+    min-height:200px;
+    padding-top:20px;
+    padding-bottom:20px;
+
+    >.row{
+      height:100%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    #HeaderInformationIntro{
+      h2,h4{
+        margin:0px;
+      }
+
+      #HeaderInformationIntroAvatar, #HeaderInformationIntroText{
+        display:inline-block;
+        vertical-align: top;
+      }
+
+      #HeaderInformationIntroText{
+        margin-top:10px;
+        line-height: 100%;
+      }
+
+      #HeaderInformationIntroAvatar{
+        margin-right:15px;
+        max-width:96px;
+
+        img{
+          border-radius:50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1200px) {
+  #HomeHeader{
+    #HeaderInformation{
+      #HeaderInformationIntro{
+        text-align: center;
+
+        #HeaderInformationIntroAvatar, #HeaderInformationIntroText{
+          display:inline-block;
+          vertical-align: top;
+          width:100%;
+        }
+
+        #HeaderInformationIntroText{
+          margin-top:0;
+        }
+
+        #HeaderInformationIntroAvatar{
+          margin-right:0;
+        }
+      }
+    }
+  }
+}

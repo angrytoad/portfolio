@@ -6,3 +6,32 @@ body{
   background-color: $main_bg_color;
   margin:0;
 }
+
+#Menu{
+  position: absolute;
+  left:0px;
+  top:0px;
+  bottom:0px;
+  width:350px;
+  background:$menu_bg_color;
+  color:white;
+}
+
+#Main{
+  position: absolute;
+  left:350px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  overflow-y:auto;
+}
+
+@media screen and(max-width:1200px) {
+  #Menu{
+    width:250px;
+  }
+
+  #Main{
+    left:250px;
+  }
+}
